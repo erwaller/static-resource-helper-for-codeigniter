@@ -38,7 +38,8 @@ function include_css ($includes) {
  *  function the current version number
  */
 function auto_version($filename, $path){
-    $base_dir = getcwd().'/system/application/support/';
+    $config = get_config();
+    $base_dir = getcwd().$config['static_resource_path'];
     return filemtime($base_dir.$path.$filename);
 }
 

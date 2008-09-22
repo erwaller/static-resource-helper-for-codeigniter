@@ -1,0 +1,29 @@
+You'll need to add these variables to your config.php file:
+
+/*
+|--------------------------------------------------------------------------
+| Static Resource URL
+|--------------------------------------------------------------------------
+|
+| URL to your static files. This will be either a subdomain, or
+| alternatively, a subdirectory. WITH a trailing slash:
+|
+|	http://static.your-site.com/
+|	http://www.your-site.com/static/
+|
+*/
+$config['static_resource_url']	= "http://static.your-site.com/";
+
+/*
+|--------------------------------------------------------------------------
+| Static Resource Path
+|--------------------------------------------------------------------------
+|
+| Local path to your static files. This is a path from your
+| application root. WITH a trailing slash:
+|
+|	/system/application/public/
+|
+*/
+$config['static_resource_path']	= "/system/application/public/";
+
