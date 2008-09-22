@@ -1,0 +1,11 @@
+RewriteEngine on
+
+#Rules for Versioned Static Files
+RewriteRule ^(js|css)/([0-9.]+/)?(.+)$ $1/$3 [L]
+
+#Far Future Expires Header
+<FilesMatch "\.(js|css)$">
+    ExpiresActive On
+    ExpiresDefault "access plus 1 years"
+</FilesMatch>
+
